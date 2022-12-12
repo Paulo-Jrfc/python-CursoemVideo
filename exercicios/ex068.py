@@ -2,7 +2,7 @@ from random import randint
 print('-=' * 30)
 print('VAMOS JOGAR PAR OU IMPAR')
 print('-=' * 30)
-computador = randint(1, 11)
+computador = randint(1, 10)
 v = 0
 while True:
     n = int(input('Diga um valor: '))
