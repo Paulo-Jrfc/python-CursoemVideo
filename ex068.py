@@ -36,4 +36,3 @@ while True:
     print('-' * 30)
 print('-=' * 30)
 print(f'GAME OVER! Você venceu {v} vezes.')
-
