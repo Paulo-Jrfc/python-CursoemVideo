@@ -1,10 +1,18 @@
 from exercicios.ex115.lib.interface import *
+from exercicios.ex115.lib.arquivo import *
 from time import sleep
+
+arq = 'cursoemvideo.txt'
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
+
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoas', 'Sair do Sistema'])
     if resposta == 1:
-        print('Opção 1')
+        # Opção de listar o conteúdo de um arquivo!
+        lerArquivo(arq)
     elif resposta == 2:
         print('Opção 2')
     elif resposta == 3:
